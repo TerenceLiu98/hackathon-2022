@@ -1,0 +1,5 @@
+prometheus_client
+akshare
+pandas
+numpy
+requests
