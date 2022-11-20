@@ -13,7 +13,8 @@ class stock_data_cn(object):
 		'''
 		self.db = create_engine("mysql+pymysql://{}:{}@{}".format(db_user, db_passwd, db_addr), echo=False)
 		self.cn_stock_list = pd.read_excel("../data/cnstock.xlsx", dtype=str)
-		self.cn_stock_list.to_sql("code", self.db, if_exists="replace", index=False)
+		self.cn_stock_list.columns = ['code', 'name', 'marketid']
+		self.cn_stock_list.to_sql("code_list", self.db, if_exists="replace", index=False)
 
 	def market_data(self):
 		print("[+] update market data")
