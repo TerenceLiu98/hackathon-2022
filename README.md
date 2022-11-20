@@ -15,13 +15,13 @@ Topic 2:
 
 Basically, this topic is focusing on macro/micro-economic data, financial data, and news(text information). Three main components:
 
-1. Market information:
+1. Market information (CN Market - SS/SZ/HK | US Market - Nasdaq/S&P | EU Market - DAX/FTSE):
 	* Market Data 
 	* Related News: Named Entity Recognition, WordCloud, Sentiment Analysis
-2. Sectors Information:
+2. Sectors Information (CN Market - SS/SZ):
 	* Indicators
 	* Related News: Named Entity Recognition, WordCloud, Sentiment Analysis
-3. Main economic performance:
+3. Global Economy:
 	* Indicators
 	* Economic Calendar 
 
