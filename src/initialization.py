@@ -25,7 +25,7 @@ class stock_data_cn(object):
 			if code['市场'][i] == 'SH':
 				tmp_data.to_sql("stock_price_sh", self.db, if_exists="append", index=False)
 			elif code['市场'][i] == 'SZ':
-				tmp_data.to_sql("stock_price_sz", self.db, if_exists="append", index=False)
+				tmp_data.to_sql("stock_price_sz", self.db, if_exists="append", index=False, dtype={'code':VARCHAR(data.index.get_level_values('code').str.len().max())})
 			else:
 				pass
 

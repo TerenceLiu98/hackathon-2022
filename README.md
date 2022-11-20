@@ -35,3 +35,8 @@ Basically, this topic is focusing on macro/micro-economic data, financial data, 
 ## DEMO
 
 ![demo.png](https://s2.loli.net/2022/11/20/oQFa6WYDTdy9AXP.png)
+
+1. Start a Grafana (via Docker)
+2. Start a Mysql/MariaDB Server and create a database call `stock`
+3. run the `initialization.py` to crawl the data and store into the database
+4. Add the dashboard `grafana/stock.json` via the `json model`
